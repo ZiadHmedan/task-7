@@ -20,6 +20,6 @@ Route::get('/', function () {
 });
  Route::get('/', [PagesController::class, 'index']);
  Route::get('/student', [StudentController::class, 'index']);
- Route::get('/student/{name}', [StudentController::class, 'show']);
-Route::delete('student/{name}', [StudentController::class, 'destroy']);
-Route::post('/student', [StudentController::class, 'store']);
+//  Route::get('/student/{name}', [StudentController::class, 'show']);
+// Route::delete('student/{name}', [StudentController::class, 'destroy']);
+// Route::post('/student', [StudentController::class, 'store']);

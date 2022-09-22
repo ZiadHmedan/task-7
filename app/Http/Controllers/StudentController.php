@@ -13,24 +13,26 @@ class StudentController extends Controller
         return $stu; 
       
     }
-    public function show($name)
-    {
-        $student = Student::where('name',$name)->get();
-        return $student;
+    // public function show($name)
+    // {
+    //     $student = Student::where('name',$name)->get();
+    //     return $student;
        
-    }
-    public function destroy($name)
-    {
-        Student::where('name',$name)->delete();
-        return"student deleted";
-    }
-    public function store(Request $request)
-    {
-        Student::creat([
-            'name'=> $request -> name,
-            'address'=> $request -> address,
+    // }
+    
+    // public function destroy($name)
+    // {
+    //     Student::where('name',$name)->delete();
+    //     return"student deleted";
+    // }
+
+    // public function store(Request $request)
+    // {
+    //     Student::creat([
+    //         'name'=> $request -> name,
+    //         'address'=> $request -> address,
             
-        ] 
-        );        
-    }
+    //     ] 
+    //     );        
+    // }
 }
